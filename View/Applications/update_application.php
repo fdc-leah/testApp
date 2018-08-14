@@ -4,7 +4,7 @@
 ?>
 <br/>
 <?php 
-	echo $this->Html->link( "Logout",   array('action'=>'logout') ); 
+	echo $this->Html->link( "Logout",   array('controller' => 'users','action'=>'logout') ); 
 ?>
 
 <div class="application form">

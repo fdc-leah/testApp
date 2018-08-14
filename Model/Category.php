@@ -5,7 +5,7 @@ class Category extends AppModel{
     public $useTable = 'categories';
     public $name = 'Category';
 
-    public function getAppCategory($application){
+	public function getAppCategories($application){
 		$appCategories = array();
 		$index = 0;
 		foreach ($application['Category'] as $category) {
@@ -13,6 +13,6 @@ class Category extends AppModel{
 			$index++;
 		}
 		return $appCategories;
-    }
+	}
 }
 ?>

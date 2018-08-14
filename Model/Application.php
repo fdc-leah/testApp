@@ -23,6 +23,7 @@ class Application extends AppModel{
     public $hasMany = array(
         'Category' => array(
             'className' => 'AppCategory',
+            'cascadeCallbacks' => false
         )
     );
 

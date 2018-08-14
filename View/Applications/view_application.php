@@ -11,7 +11,7 @@
 	<?php
 	$ownerID = $application['Application']['user_id'];
 	if($ownerID == $userId){
-		echo $this->Html->link( "Edit",   array('controller' => 'applications','action'=>'editApplication') ); 
+		echo $this->Html->link( "Edit",   array('controller' => 'applications','action'=>'updateApplication',$application['Application']['id']) ); 
 	}
 	?>
 	<h1>

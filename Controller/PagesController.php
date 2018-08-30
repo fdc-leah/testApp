@@ -35,7 +35,7 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $uses = array('User','Category','AppCategory');
+	public $uses = array('User','Category','AppCategory','Comment');
 
 /**
  * Displays a view
@@ -75,6 +75,18 @@ class PagesController extends AppController {
 				throw $e;
 			}
 			throw new NotFoundException();
+		}
+	}
+
+
+	public function index() {
+		if($this->Session->check('User.id')){
+			$this->loadModel('Application');
+			$loggedin = $this->Session->read('User.id');
+			$user = $this->User->findById($loggedin);
+			$applications = $this->Application->find('all', array('order' => array('Application.created' => 'desc')));
+			$this->set(compact('applications','user'));
+			$this->viewPath = "/Pages/";
 		}
 	}
 }

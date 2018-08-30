@@ -3814,3 +3814,1080 @@ Stack Trace:
 #13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
 #14 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #15 {main}
+2018-08-29 06:23:38 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 27]
+2018-08-29 06:23:38 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 27, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 27, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-29 07:46:56 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/UsersController.php, line 18]
+2018-08-29 07:46:56 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-29 07:47:12 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/UsersController.php, line 17]
+2018-08-29 07:47:12 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 17, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 17, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-29 07:51:16 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/UsersController.php, line 17]
+2018-08-29 07:51:16 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 17, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 17, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-29 07:53:12 Error: [MissingActionException] Action PagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-29 07:53:25 Error: [MissingActionException] Action PagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-29 07:53:39 Error: [MissingActionException] Action PagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-29 07:53:44 Error: [MissingActionException] Action PagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-30 02:01:11 Error: [MissingTableException] Table comments for model Comment was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'comments',
+  'class' => 'Comment',
+  'ds' => 'default',
+)
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3673): Model->setSource('comments')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(2623): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1846): DboSource->fields(Object(AppModel), 'Comment', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1337): DboSource->generateAssociationQuery(Object(Application), Object(AppModel), 'hasMany', 'Comment', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(AppModel), 'hasMany', 'Comment', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/UsersController.php(17): Model->find('all', Array)
+#9 [internal function]: UsersController->index('0')
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-08-30 02:07:55 Error: [MissingTableException] Table comments for model Comment was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'comments',
+  'class' => 'Comment',
+  'ds' => 'default',
+)
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3673): Model->setSource('comments')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(2623): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1846): DboSource->fields(Object(AppModel), 'Comment', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1337): DboSource->generateAssociationQuery(Object(Application), Object(AppModel), 'hasMany', 'Comment', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(AppModel), 'hasMany', 'Comment', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/UsersController.php(17): Model->find('all', Array)
+#9 [internal function]: UsersController->index('0')
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-08-30 02:28:45 Error: Fatal Error (4): syntax error, unexpected ')' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 50]
+2018-08-30 02:28:45 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 50, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 50, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 02:28:55 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 02:28:55 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 02:29:19 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 02:29:19 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 02:40:05 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 02:40:05 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 02:40:08 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 02:40:08 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 02:53:21 Error: Fatal Error (1): Call to a member function findByApplicationId() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 02:53:21 Error: [FatalErrorException] Call to a member function findByApplicationId() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 02:56:47 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 02:56:47 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 02:59:40 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 02:59:40 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 02:59:42 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 02:59:42 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:00:01 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:00:01 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:00:13 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:00:13 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:00:16 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:00:16 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:00:19 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:00:19 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:11:31 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/AppComment.php, line 18]
+2018-08-30 03:11:31 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:11:52 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/AppComment.php, line 18]
+2018-08-30 03:11:52 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:11:59 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/AppComment.php, line 18]
+2018-08-30 03:11:59 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:12:02 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/AppComment.php, line 18]
+2018-08-30 03:12:02 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:12:10 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/AppComment.php, line 18]
+2018-08-30 03:12:10 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:14:45 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/AppComment.php, line 18]
+2018-08-30 03:14:45 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:19:41 Error: Fatal Error (4): syntax error, unexpected ')' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/AppComment.php, line 18]
+2018-08-30 03:19:41 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:19:42 Error: Fatal Error (4): syntax error, unexpected ')' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/AppComment.php, line 18]
+2018-08-30 03:19:42 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:19:56 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:19:56 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:21:08 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:21:08 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:21:09 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:21:09 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:21:32 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:21:32 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:21:41 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:21:41 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:24:50 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 54]
+2018-08-30 03:24:50 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:25:16 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 54]
+2018-08-30 03:25:16 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:25:17 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 54]
+2018-08-30 03:25:17 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:26:47 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 54]
+2018-08-30 03:26:47 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:26:49 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 54]
+2018-08-30 03:26:49 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:26:49 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 54]
+2018-08-30 03:26:49 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:40:46 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 54]
+2018-08-30 03:40:46 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:42:26 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:42:26 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:42:42 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:42:42 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:44:00 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:44:00 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:53:12 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:53:12 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 03:53:15 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 03:53:15 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:05:03 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:05:03 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:05:07 Error: [MissingActionException] Action ApplicationsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ApplicationsController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/applications/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-30 05:05:17 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:05:17 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:06:44 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:06:44 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:07:25 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 54]
+2018-08-30 05:07:25 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:12:01 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 54]
+2018-08-30 05:12:01 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:12:03 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 54]
+2018-08-30 05:12:03 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:12:04 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 54]
+2018-08-30 05:12:04 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:12:41 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 54]
+2018-08-30 05:12:41 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:13:57 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:13:57 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:14:09 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:14:09 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:14:10 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:14:10 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:14:10 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:14:10 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:14:20 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:14:20 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:16:06 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:16:06 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:17:16 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:17:16 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:18:24 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:18:24 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:18:26 Error: Fatal Error (1): Call to a member function getAppComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:18:26 Error: [FatalErrorException] Call to a member function getAppComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:20:23 Error: Fatal Error (1): Call to a member function getComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:20:23 Error: [FatalErrorException] Call to a member function getComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:45:59 Error: [MissingTableException] Table app_comments for model AppComment was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'app_comments',
+  'class' => 'AppComment',
+  'ds' => 'default',
+)
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3673): Model->setSource('app_comments')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(2623): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1846): DboSource->fields(Object(AppModel), 'AppComment', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1337): DboSource->generateAssociationQuery(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(606): Model->find('first', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(834): DboSource->query('findById', Array, Object(Application))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(51): Model->__call('findById', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(51): Application->findById('1')
+#12 [internal function]: ApplicationsController->viewApplication('1')
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#16 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-08-30 05:46:38 Error: [MissingTableException] Table app_comments for model AppComment was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'app_comments',
+  'class' => 'AppComment',
+  'ds' => 'default',
+)
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3673): Model->setSource('app_comments')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(2623): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1846): DboSource->fields(Object(AppModel), 'AppComment', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1337): DboSource->generateAssociationQuery(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(606): Model->find('first', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(834): DboSource->query('findById', Array, Object(Application))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(51): Model->__call('findById', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(51): Application->findById('1')
+#12 [internal function]: ApplicationsController->viewApplication('1')
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#16 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-08-30 05:46:41 Error: [MissingTableException] Table app_comments for model AppComment was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'app_comments',
+  'class' => 'AppComment',
+  'ds' => 'default',
+)
+Request URL: /Cake/myapp/applications/viewApplication/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3673): Model->setSource('app_comments')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(2623): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1846): DboSource->fields(Object(AppModel), 'AppComment', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1337): DboSource->generateAssociationQuery(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(606): Model->find('first', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(834): DboSource->query('findById', Array, Object(Application))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(51): Model->__call('findById', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(51): Application->findById(NULL)
+#12 [internal function]: ApplicationsController->viewApplication()
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#16 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-08-30 05:47:50 Error: [MissingTableException] Table app_comments for model AppComment was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'app_comments',
+  'class' => 'AppComment',
+  'ds' => 'default',
+)
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3673): Model->setSource('app_comments')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(2623): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1846): DboSource->fields(Object(AppModel), 'AppComment', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1337): DboSource->generateAssociationQuery(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/UsersController.php(17): Model->find('all', Array)
+#9 [internal function]: UsersController->index('0')
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-08-30 05:47:52 Error: [MissingTableException] Table app_comments for model AppComment was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'app_comments',
+  'class' => 'AppComment',
+  'ds' => 'default',
+)
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3673): Model->setSource('app_comments')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(2623): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1846): DboSource->fields(Object(AppModel), 'AppComment', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1337): DboSource->generateAssociationQuery(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/UsersController.php(17): Model->find('all', Array)
+#9 [internal function]: UsersController->index('0')
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-08-30 05:47:52 Error: [MissingTableException] Table app_comments for model AppComment was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'app_comments',
+  'class' => 'AppComment',
+  'ds' => 'default',
+)
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3673): Model->setSource('app_comments')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(2623): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1846): DboSource->fields(Object(AppModel), 'AppComment', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1337): DboSource->generateAssociationQuery(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/UsersController.php(17): Model->find('all', Array)
+#9 [internal function]: UsersController->index('0')
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-08-30 05:47:52 Error: [MissingTableException] Table app_comments for model AppComment was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'app_comments',
+  'class' => 'AppComment',
+  'ds' => 'default',
+)
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3673): Model->setSource('app_comments')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(2623): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1846): DboSource->fields(Object(AppModel), 'AppComment', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1337): DboSource->generateAssociationQuery(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/UsersController.php(17): Model->find('all', Array)
+#9 [internal function]: UsersController->index('0')
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-08-30 05:47:52 Error: [MissingTableException] Table app_comments for model AppComment was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'app_comments',
+  'class' => 'AppComment',
+  'ds' => 'default',
+)
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3673): Model->setSource('app_comments')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(2623): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1846): DboSource->fields(Object(AppModel), 'AppComment', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1337): DboSource->generateAssociationQuery(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(AppModel), 'hasMany', 'AppComment', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/UsersController.php(17): Model->find('all', Array)
+#9 [internal function]: UsersController->index('0')
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-08-30 05:48:23 Error: Fatal Error (1): Call to a member function getComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:48:23 Error: [FatalErrorException] Call to a member function getComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:55:56 Error: Fatal Error (1): Call to a member function getComments() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 53]
+2018-08-30 05:55:56 Error: [FatalErrorException] Call to a member function getComments() on null
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 53, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 05:57:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'getAppCategories' at line 1
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('getAppCategorie...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('getAppCategorie...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('getAppCategorie...', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(834): DboSource->query('getAppCategorie...', Array, Object(AppCategory))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(51): Model->__call('getAppCategorie...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(51): AppCategory->getAppCategories(Array)
+#7 [internal function]: ApplicationsController->viewApplication('2')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-30 05:59:53 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'getAppCategories' at line 1
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('getAppCategorie...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('getAppCategorie...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('getAppCategorie...', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(834): DboSource->query('getAppCategorie...', Array, Object(AppCategory))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(51): Model->__call('getAppCategorie...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(51): AppCategory->getAppCategories(Array)
+#7 [internal function]: ApplicationsController->viewApplication('1')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-30 07:13:04 Error: Fatal Error (4): syntax error, unexpected 'submitComment' (T_STRING), expecting variable (T_VARIABLE) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Comment.php, line 30]
+2018-08-30 07:13:04 Error: [FatalErrorException] syntax error, unexpected 'submitComment' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 07:13:12 Error: Fatal Error (4): syntax error, unexpected 'submitComment' (T_STRING), expecting variable (T_VARIABLE) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Comment.php, line 30]
+2018-08-30 07:13:12 Error: [FatalErrorException] syntax error, unexpected 'submitComment' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 07:13:31 Error: Fatal Error (4): syntax error, unexpected 'submitComment' (T_STRING), expecting variable (T_VARIABLE) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Comment.php, line 30]
+2018-08-30 07:13:31 Error: [FatalErrorException] syntax error, unexpected 'submitComment' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 07:13:47 Error: Fatal Error (4): syntax error, unexpected 'submitComment' (T_STRING), expecting variable (T_VARIABLE) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Comment.php, line 30]
+2018-08-30 07:13:47 Error: [FatalErrorException] syntax error, unexpected 'submitComment' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 07:48:44 Error: Fatal Error (4): syntax error, unexpected 'submitComment' (T_STRING), expecting variable (T_VARIABLE) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Comment.php, line 30]
+2018-08-30 07:48:44 Error: [FatalErrorException] syntax error, unexpected 'submitComment' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /Cake/myapp/applications/viewApplication/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 08:52:10 Error: [MissingActionException] Action PagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-30 08:54:24 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'index' at line 1
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('index', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('index', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('index', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(834): DboSource->query('index', Array, Object(User))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(83): Model->__call('index', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(83): User->index()
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-30 08:54:55 Error: [MissingActionException] Action PagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-30 08:54:56 Error: [MissingActionException] Action PagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-30 08:57:32 Error: [MissingViewException] View file "Users/index.php" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.php',
+)
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-08-30 08:59:37 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 14]
+2018-08-30 08:59:37 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 14, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 14, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 09:03:24 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 71]
+2018-08-30 09:03:24 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/updateApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 71, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 71, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

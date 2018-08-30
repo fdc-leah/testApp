@@ -24,6 +24,10 @@ class Application extends AppModel{
         'Category' => array(
             'className' => 'AppCategory',
             'cascadeCallbacks' => false
+        ),
+        'Comment' => array(
+            'className' => 'Comment',
+            'cascadeCallbacks' => false
         )
     );
 
@@ -33,5 +37,6 @@ class Application extends AppModel{
         }
         return false;
     }
+
 }
 ?>

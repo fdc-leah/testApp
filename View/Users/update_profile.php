@@ -1,6 +1,6 @@
 
 <?php 
-	echo $this->Html->link( "Return to Dashboard", array('action'=>'index', 0)); 
+	echo $this->Html->link( "Return to Dashboard", array('controller' => 'pages','action' => 'index'));
 ?>
 <br/>
 <?php 

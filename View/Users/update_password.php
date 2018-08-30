@@ -1,7 +1,6 @@
 
 <?php 
-	echo $this->Html->link( "Return to Update Profile",   array('action'=>'updateProfile') ); 
-?>
+	echo $this->Html->link( "Return to Update Profile", array('controller' => 'pages','action' => 'index'));
 <br/>
 <?php 
 	echo $this->Html->link( "Logout",   array('action'=>'logout') ); 

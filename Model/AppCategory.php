@@ -3,18 +3,18 @@ App::uses('AppModel', 'Model');
 App::uses('AuthComponent', 'Controller/Component');
 class AppCategory extends AppModel{
     public $useTable = 'app_categories';
-    public $name = 'app_categories';
+    public $name = 'AppCategory';
 
     public $validate = array(
         'category' => array(
             'rule' => 'notBlank',
-            'message' => 'Plese select one or more categories'
+            'message' => 'Please select one or more categories'
         )
     );
 
     public $belongsTo = array(
-    	'Application' => array(
-    		'className' => 'Application'
+        'Application' => array(
+            'className' => 'Application'
     	)
     );
 
@@ -44,7 +44,6 @@ class AppCategory extends AppModel{
 
     public function update($appCategData,$appId){
         $newAppCategory = array();
-        $condition = array('application_id equals' => $appId);
         $temp = $this->query("Delete from app_categories where application_id = $appId");
 
         // save new category

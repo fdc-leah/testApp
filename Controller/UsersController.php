@@ -9,17 +9,6 @@ class UsersController extends AppController {
 		$this->Auth->allow(['register','login','logout','update']);
 	}
 
-	public function index($param){
-		if($this->Session->check('User.id')){
-			$this->loadModel('Application');
-			$loggedin = $this->Session->read('User.id');
-			$user = $this->User->findById($loggedin);
-			$applications = $this->Application->find('all');
-			$this->set(compact('applications','user'));
-			$this->viewPath = "/Pages/";
-		}
-	}
-
 	public function register(){
 		if ($this->request->is('post')) {
 			if(! empty($this->data)) {
@@ -30,7 +19,7 @@ class UsersController extends AppController {
 						$this->User->create();
 						if ($this->User->save($this->request->data)) {
 							$this->Flash->success(__('Successfully registered.'));
-							return $this->redirect('/');
+							$this->login();
 						}
 						$this->Flash->error(__('Unable to register.'));
 					} else {
@@ -48,7 +37,7 @@ class UsersController extends AppController {
 			if ($this->Auth->login()) {
 				$user = $this->User->findByEmail($this->data['User']['email']);
 				$this->Session->write('User.id', $user['User']['id']);
-				return $this->redirect(array('controller' => 'users','action' => 'index',0));
+				return $this->redirect(array('controller' => 'pages','action' => 'index'));
 			} else {
 				$this->Flash->error(__('Username or password is incorrect'));
 			}
@@ -66,13 +55,13 @@ class UsersController extends AppController {
 			$this->set('userId',$userId);
 			if (!$userId) {
 				$this->Session->setFlash('Please provide a user id');
-				$this->redirect(array('action'=>'index',0));
+				$this->redirect(array('controller' => 'pages','action' => 'index'));
 			}
 
 			$user = $this->User->findById($userId);
 			if (!$user) {
 				$this->Session->setFlash('Invalid User ID Provided');
-				$this->redirect(array('action'=>'index',0));
+				$this->redirect(array('controller' => 'pages','action' => 'index'));
 			}
 
 			if ($this->request->is('put')) {

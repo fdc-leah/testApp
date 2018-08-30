@@ -1,6 +1,6 @@
 
 <?php 
-	echo $this->Html->link( "Return to Dashboard", array('controller' => 'users','action'=>'index', 0)); 
+	echo $this->Html->link( "Return to Dashboard", array('controller' => 'pages','action' => 'index'));
 ?>
 <br/>
 <?php 
@@ -12,6 +12,9 @@
 	<?php echo $this->Form->create('Application'); ?>
 	<?php 
 		echo $this->Form->hidden('Application.user_id', array('value' => $userId));
+	?>
+	<?php 
+		echo $this->Form->hidden('Application.deleted', array('value' => 0));
 	?>
 	<?php
 		echo $this->Form->input('Application.title', array('label' => 'Application Name'));

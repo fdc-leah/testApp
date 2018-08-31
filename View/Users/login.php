@@ -1,4 +1,10 @@
+
+
 <?php 
+	$userloggedIn = $this->Session->read('User.id');
+	if (isset($userloggedIn) || $userloggedIn != null) {
+		$this->render('/pages/index');
+	}
 echo $this->Html->link(
     'Register User',
     array('controller' => 'users', 'action' => 'register')

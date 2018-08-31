@@ -21,7 +21,7 @@ class Application extends AppModel{
     );
 
     public $hasMany = array(
-        'Category' => array(
+        'AppCategory' => array(
             'className' => 'AppCategory',
             'cascadeCallbacks' => false
         ),
@@ -36,6 +36,18 @@ class Application extends AppModel{
             return true;
         }
         return false;
+    }
+
+    public function loadAllApplications($params){
+        $category = isset($params['category']) ? $params['category'] : null;
+        if ($category == null) {
+            return $this->find('all', array('order' => array('Application.modified' => 'desc')));
+        } else {
+            $sql = "Select * from applications Application
+            join app_categories AppCategory on Application.id = AppCategory.application_id 
+            where AppCategory.category_id = $category";
+            return $this->query($sql);
+        }
     }
 
 }

@@ -1,12 +1,6 @@
-
 <?php 
-	echo $this->Html->link( "Return to Dashboard", array('controller' => 'pages','action' => 'index'));
+	echo $this->element('header_menu');
 ?>
-<br/>
-<?php 
-	echo $this->Html->link( "Logout",   array('controller' => 'users','action'=>'logout') ); 
-?>
-
 <div class=" form">
 	<?php
 	$ownerID = $application['Application']['user_id'];

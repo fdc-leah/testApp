@@ -1,9 +1,9 @@
-
 <?php 
-	echo $this->Html->link( "Return to Update Profile", array('controller' => 'pages','action' => 'index'));
+	echo $this->element('header_menu');
+?>
 <br/>
 <?php 
-	echo $this->Html->link( "Logout",   array('action'=>'logout') ); 
+	echo $this->Html->link( "Return to Update Profile", array('controller' => 'pages','action' => 'index'));
 ?>
 
 <div class="users form">

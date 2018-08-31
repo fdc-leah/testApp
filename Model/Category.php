@@ -8,7 +8,7 @@ class Category extends AppModel{
 	public function getAppCategories($application){
 		$appCategories = array();
 		$index = 0;
-		foreach ($application['Category'] as $category) {
+		foreach ($application['AppCategory'] as $category) {
 			$appCategories[$index] = $this->findById($category['category_id']);
 			$index++;
 		}

@@ -4891,3 +4891,1098 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2018-08-30 09:57:14 Error: Fatal Error (4): syntax error, unexpected '$category' (T_VARIABLE), expecting '(' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php, line 44]
+2018-08-30 09:57:14 Error: [FatalErrorException] syntax error, unexpected '$category' (T_VARIABLE), expecting '('
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 44, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 44, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-30 09:57:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.category_id' in 'where clause'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(48): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-08-31 01:57:04 Error: [MissingViewException] View file "Users/index.php" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.php',
+)
+Request URL: /Cake/myapp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(470): View->_getViewFileName('index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/View/Users/login.php(6): View->render('index')
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(971): include('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-08-31 01:58:58 Error: [MissingViewException] View file "Users/Array.php" is missing.
+Exception Attributes: array (
+  'file' => 'Users/Array.php',
+)
+Request URL: /Cake/myapp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(470): View->_getViewFileName(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/View/Users/login.php(6): View->render(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(971): include('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-08-31 02:01:09 Error: Fatal Error (1): Call to undefined method View::redirect() in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/View/Users/login.php, line 6]
+2018-08-31 02:01:09 Error: [FatalErrorException] Call to undefined method View::redirect()
+Request URL: /Cake/myapp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 6, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 6, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-31 02:02:55 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/users
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-31 02:03:07 Error: Fatal Error (1): Call to undefined method View::redirect() in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/View/Users/login.php, line 6]
+2018-08-31 02:03:07 Error: [FatalErrorException] Call to undefined method View::redirect()
+Request URL: /Cake/myapp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 6, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 6, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-31 02:05:40 Error: [MissingViewException] View file "users/index.php" is missing.
+Exception Attributes: array (
+  'file' => 'users/index.php',
+)
+Request URL: /Cake/myapp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(470): View->_getViewFileName('/users/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/View/Users/login.php(6): View->render('/users/index')
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(971): include('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-08-31 02:23:35 Error: [MissingViewException] View file "Layout/header.php" is missing.
+Exception Attributes: array (
+  'file' => 'Layout/header.php',
+)
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(732): View->_getViewFileName('/Layout/header')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/View/Applications/add_application.php(1): View->extend('/Layout/header')
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(971): include('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-08-31 02:23:50 Error: [MissingViewException] View file "Layout/header.php" is missing.
+Exception Attributes: array (
+  'file' => 'Layout/header.php',
+)
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(732): View->_getViewFileName('../Layout/heade...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/View/Applications/add_application.php(1): View->extend('../Layout/heade...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(971): include('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-08-31 02:23:52 Error: [MissingViewException] View file "Layout/header.php" is missing.
+Exception Attributes: array (
+  'file' => 'Layout/header.php',
+)
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(732): View->_getViewFileName('../Layout/heade...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/View/Applications/add_application.php(1): View->extend('../Layout/heade...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(971): include('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-08-31 02:52:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.id' in 'field list'
+Request URL: /Cake/myapp/applications/updateApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('list', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(71): Model->find('list', Array)
+#7 [internal function]: ApplicationsController->updateApplication('2')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:33 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:57 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:57 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:53:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:54:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:54:40 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:54:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:54:53 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:54:54 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:54:54 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:54:54 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:54:54 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:54:55 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:54:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:55:11 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:55:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:55:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'Category'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppCategory), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(88): Model->find('all')
+#7 [internal function]: PagesController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:55:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'getAppCategories' at line 1
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('getAppCategorie...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('getAppCategorie...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('getAppCategorie...', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(834): DboSource->query('getAppCategorie...', Array, Object(AppCategory))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(54): Model->__call('getAppCategorie...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(54): AppCategory->getAppCategories(Array)
+#7 [internal function]: ApplicationsController->viewApplication('2')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:55:53 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'getAppCategories' at line 1
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('getAppCategorie...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('getAppCategorie...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('getAppCategorie...', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(834): DboSource->query('getAppCategorie...', Array, Object(AppCategory))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(54): Model->__call('getAppCategorie...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(54): AppCategory->getAppCategories(Array)
+#7 [internal function]: ApplicationsController->viewApplication('2')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 02:56:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'getAppCategories' at line 1
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('getAppCategorie...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('getAppCategorie...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('getAppCategorie...', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(834): DboSource->query('getAppCategorie...', Array, Object(AppCategory))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(54): Model->__call('getAppCategorie...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php(54): AppCategory->getAppCategories(Array)
+#7 [internal function]: ApplicationsController->viewApplication('2')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-08-31 03:53:41 Error: [MissingActionException] Action PagesController::fill() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'fill',
+)
+Request URL: /Cake/myapp/pages/fill/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-31 03:55:31 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/pages/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-31 05:03:45 Error: Fatal Error (4): syntax error, unexpected '?>' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/View/Pages/index.php, line 26]
+2018-08-31 05:03:45 Error: [FatalErrorException] syntax error, unexpected '?>'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 26, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 26, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-31 05:21:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.category_id' in 'where clause'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(48): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-08-31 05:25:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AppCategory.category_id' in 'where clause'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(48): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-08-31 05:25:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AppCategory.category_id' in 'where clause'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(48): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-08-31 05:25:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category_id' in 'where clause'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(48): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-08-31 05:31:37 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.application_id' in 'field list'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1524): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1358): DboSource->_fetchHasMany(Object(Application), 'SELECT `Categor...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(49): Model->find('all', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#10 [internal function]: PagesController->index()
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2018-08-31 05:31:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.application_id' in 'field list'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1524): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1358): DboSource->_fetchHasMany(Object(Application), 'SELECT `Categor...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(49): Model->find('all', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#10 [internal function]: PagesController->index()
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2018-08-31 05:31:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.application_id' in 'field list'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1524): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1358): DboSource->_fetchHasMany(Object(Application), 'SELECT `Categor...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Application), Object(Category), 'hasMany', 'Category', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(49): Model->find('all', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#10 [internal function]: PagesController->index()
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2018-08-31 05:32:32 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AppCategory.category_id' in 'where clause'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(48): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-08-31 05:33:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'loadModel' at line 1
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('loadModel', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('loadModel', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(618): DboSource->fetchAll('loadModel', Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(834): DboSource->query('loadModel', Array, Object(Application))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(42): Model->__call('loadModel', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(42): Application->loadModel('AppCategory')
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-08-31 05:34:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AppCategory.category_id' in 'where clause'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(48): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-08-31 05:34:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category_id' in 'where clause'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(48): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-08-31 05:38:10 Error: Fatal Error (4): syntax error, unexpected ')' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php, line 54]
+2018-08-31 05:38:10 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-31 05:38:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$category' in 'on clause'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(54): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-08-31 05:38:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$category' in 'on clause'
+Request URL: /Cake/myapp/pages/index?category=12
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(54): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-08-31 05:42:00 Error: Fatal Error (4): syntax error, unexpected ''conditions'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php, line 50]
+2018-08-31 05:42:00 Error: [FatalErrorException] syntax error, unexpected ''conditions'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /Cake/myapp/pages?category=1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 50, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 50, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-31 05:47:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'outer JOIN `temp_project`.`app_categories` AS `AppCategory` ON (`AppCategory`.`c' at line 1
+Request URL: /Cake/myapp/pages?category=2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(54): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(87): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-08-31 06:01:11 Error: Fatal Error (4): syntax error, unexpected ''conditions'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php, line 50]
+2018-08-31 06:01:11 Error: [FatalErrorException] syntax error, unexpected ''conditions'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /Cake/myapp/pages?category=3
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 50, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 50, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-31 06:14:45 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/users/index/0
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-31 07:49:16 Error: [MissingPluginException] Plugin AppFile could not be found.
+Exception Attributes: array (
+  'plugin' => 'AppFile',
+)
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(227): CakePlugin::path('AppFile')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(549): App::path('Model', 'AppFile')
+#2 [internal function]: App::load('file')
+#3 [internal function]: spl_autoload_call('file')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('file')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/Helper/FormHelper.php(171): ClassRegistry::init('AppFile.file', true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('AppFile.file')
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('AppFile.file', 'key')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/View/Applications/add_application.php(14): FormHelper->create('AppFile.file', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(971): include('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2018-08-31 08:04:30 Error: Fatal Error (4): syntax error, unexpected '{' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 30]
+2018-08-31 08:04:30 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-31 08:04:55 Error: Fatal Error (4): syntax error, unexpected '{' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 30]
+2018-08-31 08:04:55 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-31 08:04:57 Error: Fatal Error (4): syntax error, unexpected '{' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 30]
+2018-08-31 08:04:57 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-31 08:04:58 Error: Fatal Error (4): syntax error, unexpected '{' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 30]
+2018-08-31 08:04:58 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-08-31 08:58:12 Error: [MissingViewException] View file "AppFiles/uploadfile.php" is missing.
+Exception Attributes: array (
+  'file' => 'AppFiles/uploadfile.php',
+)
+Request URL: /Cake/myapp/appfiles/uploadfile
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppFilesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-08-31 08:58:21 Error: [MissingActionException] Action AppFilesController::upload_file() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppFilesController',
+  'action' => 'upload_file',
+)
+Request URL: /Cake/myapp/appfiles/upload_file
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppFilesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-31 08:58:25 Error: [MissingViewException] View file "AppFiles/upload_file.php" is missing.
+Exception Attributes: array (
+  'file' => 'AppFiles/upload_file.php',
+)
+Request URL: /Cake/myapp/appfiles/uploadFile
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppFilesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-08-31 08:59:10 Error: [MissingActionException] Action ApplicationsController::uploadFile() could not be found.
+Exception Attributes: array (
+  'controller' => 'ApplicationsController',
+  'action' => 'uploadFile',
+)
+Request URL: /Cake/myapp/applications/uploadFile
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-31 08:59:18 Error: [MissingActionException] Action ApplicationsController::appfiles() could not be found.
+Exception Attributes: array (
+  'controller' => 'ApplicationsController',
+  'action' => 'appfiles',
+)
+Request URL: /Cake/myapp/applications/appfiles/uploadFile
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-08-31 08:59:23 Error: [MissingViewException] View file "AppFiles/upload_file.php" is missing.
+Exception Attributes: array (
+  'file' => 'AppFiles/upload_file.php',
+)
+Request URL: /Cake/myapp/appfiles/uploadFile
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppFilesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-08-31 08:59:28 Error: [MissingViewException] View file "AppFiles/upload_file.php" is missing.
+Exception Attributes: array (
+  'file' => 'AppFiles/upload_file.php',
+)
+Request URL: /Cake/myapp/appFiles/uploadFile
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppFilesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

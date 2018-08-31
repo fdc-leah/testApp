@@ -35,7 +35,7 @@ class AppCategory extends AppModel{
     public function getAppCategoriesByAppId($application){
         $appCategories = array();
         $index = 0;
-        foreach ($application['Category'] as $category) {
+        foreach ($application['AppCategory'] as $category) {
             $appCategories[$index] = $category['category_id'];
             $index++;
         }

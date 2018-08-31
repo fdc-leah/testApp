@@ -1,12 +1,6 @@
-
 <?php 
-	echo $this->Html->link( "Return to Dashboard", array('controller' => 'pages','action' => 'index'));
+	echo $this->element('header_menu');
 ?>
-<br/>
-<?php 
-	echo $this->Html->link( "Logout",   array('action'=>'logout') ); 
-?>
-
 <div class="users form">
 <h1>Update Profile</h1>
 	<?php echo $this->Form->create('User'); ?>

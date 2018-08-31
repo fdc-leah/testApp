@@ -3,7 +3,6 @@ App::uses('AppController', 'Controller');
 class ApplicationsController extends AppController {
 	public $helpers = array('Html', 'Form', 'Flash');
 	public $components = array('Flash');
-
 	public $uses = array('User','AppCategory','Comment','Application');
 
 
@@ -23,9 +22,9 @@ class ApplicationsController extends AppController {
 				$appData['Application'] = $this->request->data['Application'];
 				$appCategData = $this->request->data['AppCategory'];
 
-				// check first if user selected categories
-				$errors = array_filter($appCategData);
-				if (empty($errors)){
+				// check first if user have selected categories
+				$appCategoryErrors = array_filter($appCategData);
+				if (empty($appCategoryErrors)){
 					$this->Session->setFlash(__("Please select one or more categories"));
 					return;
 				}
@@ -40,7 +39,7 @@ class ApplicationsController extends AppController {
 					$this->loadModel('AppCategory');
 			    	if($this->AppCategory->add($appCategData,$lastId)){
 						$this->Session->setFlash(__('Successfully added new application'));
-						$this->redirect(array('controller' => 'users','action' => 'index', '0'));
+						$this->redirect(array('controller' => 'appFiles','action' => 'uploadFile'));
 			    	}
 				}else{
 					$this->Session->setFlash(__("Unable to save your application."));
@@ -57,9 +56,12 @@ class ApplicationsController extends AppController {
 		$userId = $this->Session->read('User.id');
 		$this->set(compact('appCategories','application', 'userId','appComments'));
 
+		// comment
 		if($this->request->is('post')){
 			if( $this->Comment->submitComment($this->request->data)){
 				$this->redirect(array('action' => 'viewApplication', $appId));
+			} else {
+				$this->Session->setFlash(__("Unable to send your comment."));
 			}
 		}
 	}
@@ -97,7 +99,7 @@ class ApplicationsController extends AppController {
 			if ($this->Application->add($appData)) {
 				if($this->AppCategory->update($appCategData,$this->request->data['Application']['id'])){
 					$this->Session->setFlash(__('Successfully updated the application'));
-					$this->redirect(array('controller' => 'pages','action' => 'index', '0'));
+					$this->redirect(array('controller' => 'pages','action' => 'index'));
 				} else {
 					$this->Session->setFlash(__("Unable to update your application."));
 				}

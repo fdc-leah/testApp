@@ -38,7 +38,6 @@ class ApplicationsController extends AppController {
 					// save app's category.
 					$this->loadModel('AppCategory');
 			    	if($this->AppCategory->add($appCategData,$lastId)){
-						$this->Session->setFlash(__('Successfully added new application'));
 						$this->redirect(array('controller' => 'appFiles','action' => 'uploadFile'));
 			    	}
 				}else{

@@ -1,54 +1,44 @@
 <?php
 App::uses('AppController', 'Controller');
 class AppFilesController extends AppController {
-	public $helpers = array('Html', 'Form', 'Flash');
+	public $helpers = array('Html', 'Form', 'Flash','Number');
 	public $components = array('Flash');
-	public $uses = array('User','AppCategory','Comment','Application');
+	public $uses = array('Application','AppFile');
 
-	public function uploadFile(){
+	public function uploadFile($appId){
 		// once saved, get its id.
-		$app = $this->Application->findById($this->Application->id);
-		if ($this->request->is('post')) {
+		$idLastinserted = ($appId != null ? $appId : $this->Application->id);
+		$app = $this->Application->findById($idLastinserted);
+		$userId = $this->Session->read('User.id');
+		$this->set(compact('app'));
 
+		// if logged in user is not the owner, redirect to index
+		if($userId != $app['Application']['user_id']){
+			$this->Session->setFlash('Invalid action');
+			return $this->redirect(array('controller' => 'pages','action' => 'index'));
+		}
+
+		if ($this->request->is('post') || $this->request->is('put') ) {
+			$appFile = $this->request->data['AppFile']['file'];
 			// check first if user selected any file.
 			$appFileErrors = array_filter($appFile);
 			if (empty($appFileErrors)){
 				$this->Session->setFlash(__("No file selected"));
 				return;
 			}
+			$filepath = $this->AppFile->saveFile($appFile);
+			// if($filepath == false){
+			// 	$this->Session->setFlash(__('Failed uploading the file.'));
+			// 	return $this->redirect( array('controller' => 'applications','action'=>'updateApplication',$idLastinserted)); ;
+			// }
 
-			$uploadData = $this->data['AppFile']['file'];
-			$filepath = $this->saveFile($uploadData);
-			if($filepath == false){
-				return false;
-			}
-
-			$this->request->data['AppFile']['category'] = $selectedCategories;
-			$this->request->data['AppFile']['filepath'] = $filepath;
-			$this->request->data['AppFile']['size'] = $uploadData['size'];
-			if($this->AppFile->save()){
-				$this->Session->setFlash(__('Successfully added new application'));
-				$this->redirect(array('controller' => 'pages','action' => 'index'));
-			}
+			// $this->request->data['AppFile']['filepath'] = $filepath;
+			// $this->request->data['AppFile']['size'] = $this->Number->toReadableSize($uploadData['size']);
+			// if($this->AppFile->save()){
+			// 	$this->Session->setFlash(__('Successfully added new application'));
+			// 	$this->redirect(array('controller' => 'pages','action' => 'index'));
+			// }
 		}
-	}
-
-	public function saveFile($data){
-		$filename = basename($data['name']);
-		$uploadFolder = WWW_ROOT. 'appfiles';  
-		$filename = $filename.'_'.time(); 
-		$uploadPath =  $uploadFolder . DS . $filename;
-
-		// make directory if not found
-		if( !file_exists($uploadFolder) ){
-			mkdir($uploadFolder);
-		}
-
-		if (!move_uploaded_file($uploadData['tmp_name'], $uploadPath)) {
-			return false;
-		}
-
-		return $uploadPath;
 	}
 }
 ?>

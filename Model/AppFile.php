@@ -20,6 +20,24 @@ class AppFile extends AppModel{
     	)
     );
 
-    
+    public function saveFile($data){
+        $filename = basename($data['name'],".");
+        $fileNameNoExtension = preg_replace("/\.[^.]+$/", "", $filename);
+        $uploadFolder = WWW_ROOT. 'appfiles';  
+        $filename = $fileNameNoExtension.'_'.time(); 
+        $uploadPath =  $uploadFolder . DS . $filename;
+
+        // make directory if not found
+        if( !file_exists($uploadFolder) ){
+            mkdir($uploadFolder);
+        }
+
+        if (!move_uploaded_file($data['tmp_name'], $uploadPath)) {
+            echo "here";
+            // return false;
+        }
+
+        // return $uploadPath;
+    }
 }
 ?>

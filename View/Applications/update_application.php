@@ -3,6 +3,13 @@
 ?>
 <div class="application form">
 <h1>Update Profile</h1>
+<br/>
+<?php 
+	echo $this->Html->link(
+		"Upload File",
+		array('controller' => 'appFiles','action' => 'uploadFile',$appId)
+	); 
+?>
 	<?php echo $this->Form->create('Application'); ?>
 	<?php 
 		echo $this->Form->hidden('id', array('value' => $appId));

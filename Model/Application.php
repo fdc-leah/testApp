@@ -41,7 +41,10 @@ class Application extends AppModel{
     public function loadAllApplications($params){
         $category = isset($params['category']) ? $params['category'] : null;
         if ($category == null) {
-            return $this->find('all', array('order' => array('Application.modified' => 'desc')));
+            $result = $this->find('all', array('order' => array('Application.modified' => 'desc'),
+                'fields' => array('Application.id','Application.title','Application.description','Application.version'),
+                'recursive' => -1));
+            return $result;
         } else {
             $sql = "Select * from applications Application
             join app_categories AppCategory on Application.id = AppCategory.application_id 

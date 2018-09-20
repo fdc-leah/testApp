@@ -21,10 +21,10 @@ class AppFile extends AppModel{
     );
 
     public function saveFile($data){
-        $filename = basename($data['name'],".");
-        $fileNameNoExtension = preg_replace("/\.[^.]+$/", "", $filename);
+        $basename = basename($data['name'],".");
         $uploadFolder = WWW_ROOT. 'appfiles';  
-        $filename = $fileNameNoExtension.'_'.time(); 
+        $basename = str_replace(" ", "_", $basename);
+        $filename = time().'_'.$basename; 
         $uploadPath =  $uploadFolder . DS . $filename;
 
         // make directory if not found
@@ -33,11 +33,23 @@ class AppFile extends AppModel{
         }
 
         if (!move_uploaded_file($data['tmp_name'], $uploadPath)) {
-            echo "here";
-            // return false;
+            return false;
         }
 
-        // return $uploadPath;
+        return $filename;
+    }
+
+    public function getCurrentFile($applicationId){
+        $result = $this->find('first', array('conditions' => array('AppFile.application_id' => $applicationId),
+            'fields' => array('AppFile.filepath'),
+            'order' => array('AppFile.created' => 'desc')));
+
+        $errors = array_filter($result);
+        if (empty($errors)){
+            return false;
+        } else {
+            return $result['AppFile']['filepath'];
+        }
     }
 }
 ?>

@@ -14,7 +14,6 @@
  * @package       app.webroot.css
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
-
 * {
 	margin:0;
 	padding:0;
@@ -102,6 +101,7 @@ p {
 	color: #333;
 	padding: 10px 20px 40px 20px;
 	overflow: auto;
+	height: 100%;
 }
 #footer {
 	clear: both;

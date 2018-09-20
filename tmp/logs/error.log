@@ -6358,3 +6358,335 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2018-09-19 03:36:56 Error: Fatal Error (1): Call to a member function toReadableSize() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/AppFilesController.php, line 36]
+2018-09-19 03:36:56 Error: [FatalErrorException] Call to a member function toReadableSize() on null
+Request URL: /Cake/myapp/appFiles/uploadFile/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 36, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 36, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-19 03:38:32 Error: [MissingHelperException] Helper class NumberHelperHelper could not be found.
+Exception Attributes: array (
+  'class' => 'NumberHelperHelper',
+  'plugin' => false,
+)
+Request URL: /Cake/myapp/appFiles/uploadFile/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(907): HelperCollection->load('NumberHelper', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(1263): View->__construct(Object(AppFilesController))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(949): Controller->_getViewObject()
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppFilesController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-09-19 03:38:36 Error: [MissingHelperException] Helper class NumberHelperHelper could not be found.
+Exception Attributes: array (
+  'class' => 'NumberHelperHelper',
+  'plugin' => false,
+)
+Request URL: /Cake/myapp/appFiles/uploadFile/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(907): HelperCollection->load('NumberHelper', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(1263): View->__construct(Object(AppFilesController))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(949): Controller->_getViewObject()
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppFilesController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-09-19 03:38:59 Error: Fatal Error (1): Call to a member function toReadableSize() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/AppFilesController.php, line 36]
+2018-09-19 03:38:59 Error: [FatalErrorException] Call to a member function toReadableSize() on null
+Request URL: /Cake/myapp/appFiles/uploadFile/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 36, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 36, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-19 03:43:51 Error: Fatal Error (1): Call to a member function toReadableSize() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/AppFilesController.php, line 36]
+2018-09-19 03:43:51 Error: [FatalErrorException] Call to a member function toReadableSize() on null
+Request URL: /Cake/myapp/appFiles/uploadFile/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 36, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 36, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-19 03:46:50 Error: Fatal Error (1): Call to a member function toReadableSize() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/AppFilesController.php, line 37]
+2018-09-19 03:46:50 Error: [FatalErrorException] Call to a member function toReadableSize() on null
+Request URL: /Cake/myapp/appFiles/uploadFile/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 37, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 37, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-19 03:53:02 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/AppFilesController.php, line 38]
+2018-09-19 03:53:02 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /Cake/myapp/appFiles/uploadFile/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 38, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 38, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-19 06:49:31 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/AppFile.php, line 49]
+2018-09-19 06:49:31 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /Cake/myapp/applications/viewApplication/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 49, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 49, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-19 08:15:59 Error: Fatal Error (1): Call to undefined function replace() in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/AppFile.php, line 26]
+2018-09-19 08:15:59 Error: [FatalErrorException] Call to undefined function replace()
+Request URL: /Cake/myapp/appFiles/uploadFile/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 26, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 26, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-19 08:17:54 Error: [MissingActionException] Action AppFilesController::1537344993_() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppFilesController',
+  'action' => '1537344993_',
+)
+Request URL: /Cake/myapp/appfiles/1537344993_
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppFilesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-09-19 08:43:03 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 52]
+2018-09-19 08:43:03 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Cake/myapp/applications/viewApplication/3
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 52, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 52, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-19 08:44:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'recursive' in 'order clause'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(44): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(86): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-09-19 08:44:46 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php, line 44]
+2018-09-19 08:44:46 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 44, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 44, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-19 08:47:56 Error: Fatal Error (4): syntax error, unexpected ''fields'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php, line 45]
+2018-09-19 08:47:56 Error: [FatalErrorException] syntax error, unexpected ''fields'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 45, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 45, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-19 08:48:06 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Application.name' in 'field list'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('SELECT `Applica...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(675): DboSource->execute('SELECT `Applica...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Datasource/DboSource.php(1186): DboSource->fetchAll('SELECT `Applica...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Application), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php(46): Model->find('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/PagesController.php(86): Application->loadAllApplications(Array)
+#8 [internal function]: PagesController->index()
+#9 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-09-19 08:50:44 Error: Fatal Error (4): syntax error, unexpected 'return' (T_RETURN), expecting ')' in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Model/Application.php, line 47]
+2018-09-19 08:50:44 Error: [FatalErrorException] syntax error, unexpected 'return' (T_RETURN), expecting ')'
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 47, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 47, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-20 05:13:32 Error: [MissingHelperException] Helper class RatingHelperHelper could not be found.
+Exception Attributes: array (
+  'class' => 'RatingHelperHelper',
+  'plugin' => 'Ratings',
+)
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(907): HelperCollection->load('Ratings.RatingH...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(1263): View->__construct(Object(ApplicationsController))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(949): Controller->_getViewObject()
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-09-20 05:13:45 Error: [MissingHelperException] Helper class RatingsHelper could not be found.
+Exception Attributes: array (
+  'class' => 'RatingsHelper',
+  'plugin' => false,
+)
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(907): HelperCollection->load('Ratings', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(1263): View->__construct(Object(ApplicationsController))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(949): Controller->_getViewObject()
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-09-20 05:13:55 Error: [MissingHelperException] Helper class RatingsHelper could not be found.
+Exception Attributes: array (
+  'class' => 'RatingsHelper',
+  'plugin' => false,
+)
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(907): HelperCollection->load('Ratings', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(1263): View->__construct(Object(ApplicationsController))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(949): Controller->_getViewObject()
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-09-20 05:14:11 Error: [MissingComponentException] Component class RatingsComponent could not be found.
+Exception Attributes: array (
+  'class' => 'RatingsComponent',
+  'plugin' => false,
+)
+Request URL: /Cake/myapp/applications/addApplication
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Ratings', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(644): ComponentCollection->init(Object(ApplicationsController))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-09-20 09:23:12 Error: [MissingActionException] Action ApplicationsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ApplicationsController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/applications/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-09-20 09:26:57 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/applications/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-09-20 09:27:21 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/Controller/ApplicationsController.php, line 12]
+2018-09-20 09:27:21 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /Cake/myapp/applications/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 12, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 12, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-20 09:27:44 Error: [MissingViewException] View file "/Pages//index.php" is missing.
+Exception Attributes: array (
+  'file' => '/Pages//index.php',
+)
+Request URL: /Cake/myapp/applications/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-09-20 09:27:46 Error: [MissingViewException] View file "/Pages//index.php" is missing.
+Exception Attributes: array (
+  'file' => '/Pages//index.php',
+)
+Request URL: /Cake/myapp/applications/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-09-20 09:28:01 Error: [MissingActionException] Action PagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-09-20 09:28:45 Error: [MissingActionException] Action PagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-09-20 09:28:48 Error: [MissingActionException] Action PagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+)
+Request URL: /Cake/myapp/pages
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

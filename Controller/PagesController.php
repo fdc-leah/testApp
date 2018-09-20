@@ -77,16 +77,4 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
-
-
-	public function index() {
-		if($this->Session->check('User.id')){
-			$loggedin = $this->Session->read('User.id');
-			$user = $this->User->findById($loggedin);
-			$applications = $this->Application->loadAllApplications($this->params['url']);
-			$categories = $this->Category->find('all');
-			$this->set(compact('applications','user','categories'));
-			$this->viewPath = "/Pages/";
-		}
-	}
 }

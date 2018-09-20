@@ -21,11 +21,16 @@
 	);
 ?>
 <div class="application-list form">
-	 <ul class="dropdown-menu">
-		<?php foreach ($categories as $category){?>
-			<li> <?= $this->Html->link($category['Category']['category'], array('action' => 'index', '?' => array('category' => $category['Category']['id']))) ?></li>
-		<?php }?>
-  	</ul>
+	<ul class="nav">
+		<li> 
+			<a href="#">Categories</a>
+			 <ul class="dropdown-menu">
+				<?php foreach ($categories as $category){?>
+					<li> <?= $this->Html->link($category['Category']['category'], array('action' => 'index', '?' => array('category' => $category['Category']['id']))) ?></li>
+				<?php }?>
+		  	</ul>
+		</li>
+	</ul>
 	<h3> Applications </h3>
 	<table style="width:100%">
 		<tr>

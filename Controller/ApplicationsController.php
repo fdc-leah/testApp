@@ -2,9 +2,17 @@
 App::uses('AppController', 'Controller');
 class ApplicationsController extends AppController {
 	public $helpers = array('Html', 'Form', 'Flash');
-	public $components = array('Flash');
-	public $uses = array('User','AppCategory','Comment','Application');
+	public $uses = array('User','AppCategory','Comment','Application','AppFile', 'Category');
 
+	public function index() {
+		if($this->Session->check('User.id')){
+			$loggedin = $this->Session->read('User.id');
+			$user = $this->User->findById($loggedin);
+			$applications = $this->Application->loadAllApplications($this->params['url']);
+			$categories = $this->Category->find('all');
+			$this->set(compact('applications','user','categories'));
+		}
+	}
 
 	public function addApplication(){
 		$this->loadModel('Category');
@@ -38,7 +46,7 @@ class ApplicationsController extends AppController {
 					// save app's category.
 					$this->loadModel('AppCategory');
 			    	if($this->AppCategory->add($appCategData,$lastId)){
-						$this->redirect(array('controller' => 'appFiles','action' => 'uploadFile'));
+						$this->redirect(array('controller' => 'appFiles','action' => 'uploadFile', $lastId));
 			    	}
 				}else{
 					$this->Session->setFlash(__("Unable to save your application."));
@@ -52,8 +60,10 @@ class ApplicationsController extends AppController {
 		$application = $this->Application->findById($appId);
 		$appCategories = $this->Category->getAppCategories($application);
 		$appComments = $this->Comment->getAppComments($appId);
+		$image = $this->AppFile->getCurrentFile($appId);
+		$filePath = $this->webroot.'appfiles/'.$image;
 		$userId = $this->Session->read('User.id');
-		$this->set(compact('appCategories','application', 'userId','appComments'));
+		$this->set(compact('appCategories','application', 'userId','appComments','filePath'));
 
 		// comment
 		if($this->request->is('post')){
@@ -75,10 +85,11 @@ class ApplicationsController extends AppController {
 		// if logged in user is not the owner, redirect to index
 		if($userId != $application['Application']['user_id']){
 			$this->Session->setFlash('Invalid action');
-			return $this->redirect(array('controller' => 'pages','action' => 'index'));
+			return $this->redirect(array('controller' => 'applications','action' => 'index'));
 		}
 
 		$this->set(compact('appId', 'userId','selectedCategories','categories'));
+		
 		if (!$this->request->data) {
 			$this->request->data['AppCategory']['category'] = $selectedCategories;
 			$this->request->data['Application'] = $application['Application'];
@@ -98,7 +109,7 @@ class ApplicationsController extends AppController {
 			if ($this->Application->add($appData)) {
 				if($this->AppCategory->update($appCategData,$this->request->data['Application']['id'])){
 					$this->Session->setFlash(__('Successfully updated the application'));
-					$this->redirect(array('controller' => 'pages','action' => 'index'));
+					$this->redirect(array('controller' => 'applications','action' => 'index'));
 				} else {
 					$this->Session->setFlash(__("Unable to update your application."));
 				}

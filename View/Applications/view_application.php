@@ -2,6 +2,10 @@
 	echo $this->element('header_menu');
 ?>
 <div class=" form">
+
+	<?php if($filePath != "") { ?>
+		<img src="<?php echo $filePath;?>" width="150px" height="150px" > <br/> <br/>
+	<?php }?>
 	<?php
 	$ownerID = $application['Application']['user_id'];
 	if($ownerID == $userId){

@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 App::uses('AuthComponent', 'Controller/Component');
 class Application extends AppModel{
     public $useTable = 'applications';
-    public $name = 'applications';
+    public $name = 'Application';
 
 	public $validate = array(
         'title' => array(
@@ -42,14 +42,15 @@ class Application extends AppModel{
         $category = isset($params['category']) ? $params['category'] : null;
         if ($category == null) {
             $result = $this->find('all', array('order' => array('Application.modified' => 'desc'),
-                'fields' => array('Application.id','Application.title','Application.description','Application.version'),
-                'recursive' => -1));
+                'fields' => array('Application.id','Application.title','Application.description','Application.version')));
+            // pr($result);
             return $result;
         } else {
-            $sql = "Select * from applications Application
-            join app_categories AppCategory on Application.id = AppCategory.application_id 
+            $sql = "Select * from applications as Application
+            join app_categories as AppCategory on Application.id = AppCategory.application_id 
             where AppCategory.category_id = $category";
-            return $this->query($sql);
+            $result = $this->query($sql);
+            return $result;
         }
     }
 

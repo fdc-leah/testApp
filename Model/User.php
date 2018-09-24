@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 App::uses('AuthComponent', 'Controller/Component');
 class User extends AppModel{
     public $useTable = 'users';
-    public $name = 'users';
+    public $name = 'User';
     public $key = 'wt1U5MACWJFTXGenFoZoiLwQGrLgdbHABAsDdZKoALa';
 
 	public $validate = array(

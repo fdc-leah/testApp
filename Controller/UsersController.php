@@ -37,7 +37,7 @@ class UsersController extends AppController {
 			if ($this->Auth->login()) {
 				$user = $this->User->findByEmail($this->data['User']['email']);
 				$this->Session->write('User.id', $user['User']['id']);
-				return $this->redirect(array('controller' => 'pages','action' => 'index'));
+				return $this->redirect(array('controller' => 'applications','action' => 'index'));
 			} else {
 				$this->Flash->error(__('Username or password is incorrect'));
 			}
@@ -55,13 +55,13 @@ class UsersController extends AppController {
 			$this->set('userId',$userId);
 			if (!$userId) {
 				$this->Session->setFlash('Please provide a user id');
-				$this->redirect(array('controller' => 'pages','action' => 'index'));
+				$this->redirect(array('controller' => 'applications','action' => 'index'));
 			}
 
 			$user = $this->User->findById($userId);
 			if (!$user) {
 				$this->Session->setFlash('Invalid User ID Provided');
-				$this->redirect(array('controller' => 'pages','action' => 'index'));
+				$this->redirect(array('controller' => 'applications','action' => 'index'));
 			}
 
 			if ($this->request->is('put')) {

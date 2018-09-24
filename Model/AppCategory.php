@@ -14,7 +14,8 @@ class AppCategory extends AppModel{
 
     public $belongsTo = array(
         'Application' => array(
-            'className' => 'Application'
+            'className' => 'Application',
+            'counterCache' => true
     	)
     );
 

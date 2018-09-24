@@ -37,9 +37,10 @@ class AppController extends Controller {
         'DebugKit.Toolbar',
         'Flash',
         'Session',
+        'Paginator',
         'Auth' => array(
             'loginRedirect' => array(
-            'controller' => 'Users',
+            'controller' => 'applications',
             'action' => 'index'
         ),
         'logoutRedirect' => array(
@@ -62,8 +63,8 @@ class AppController extends Controller {
     public function beforeFilter() {
         $this->Auth->allow('index', 'view','login');
         $this->Auth->authorize = array('Controller');
-        $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'index');
-        $this->Auth->loginRedirect = array('controller' => 'users', 'action' => 'index');
+        $this->Auth->logoutRedirect = array('controller' => 'applications', 'action' => 'index');
+        $this->Auth->loginRedirect = array('controller' => 'applications', 'action' => 'index');
     }
 
     public function isAuthorized($user = null) {

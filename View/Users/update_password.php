@@ -3,7 +3,7 @@
 ?>
 <br/>
 <?php 
-	echo $this->Html->link( "Return to Update Profile", array('controller' => 'pages','action' => 'index'));
+	echo $this->Html->link( "Return to Update Profile", array('controller' => 'applications','action' => 'index'));
 ?>
 
 <div class="users form">

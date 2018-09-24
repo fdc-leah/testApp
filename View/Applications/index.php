@@ -20,7 +20,7 @@
 		array('controller' => 'applications', 'action' => 'addApplication')
 	);
 ?>
-<div class="application-list form">
+<div class="form" id="application-list">
 	<ul class="nav">
 		<li> 
 			<a href="#">Categories</a>
@@ -53,4 +53,27 @@
 			}
 		?>
 	</table>
+
+<?php
+		echo $this->Paginator->next('Show more star wars posts...');
+?>
 </div>
+
+<script>
+  $(function(){
+	var $container = $('#application-list');
+
+	$container.infinitescroll({
+	  navSelector  : '.next',    // selector for the paged navigation 
+	  nextSelector : '.next a',  // selector for the NEXT link (to page 2)
+	  debug		 	: true,
+	  dataType	 	: 'html',
+	  loading: {
+		  finishedMsg: 'No more posts to load. All Hail Star Wars God!',
+		  img: '<?php echo $this->webroot; ?>img/spinner.gif'
+		}
+	  }
+	);
+  });
+
+</script>

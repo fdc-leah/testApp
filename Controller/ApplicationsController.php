@@ -3,15 +3,35 @@ App::uses('AppController', 'Controller');
 class ApplicationsController extends AppController {
 	public $helpers = array('Html', 'Form', 'Flash');
 	public $uses = array('User','AppCategory','Comment','Application','AppFile', 'Category');
-
+	public $paginate = array(
+		'Application' => array(
+			'limit' => 2,
+			'order' => array('modified' => 'desc')
+		)
+	);
 	public function index() {
 		if($this->Session->check('User.id')){
 			$loggedin = $this->Session->read('User.id');
 			$user = $this->User->findById($loggedin);
-			$applications = $this->Application->loadAllApplications($this->params['url']);
+			$applications = $this->paginateApp($this->params['url']);
 			$categories = $this->Category->find('all');
 			$this->set(compact('applications','user','categories'));
 		}
+	}
+
+	public function paginateApp($params){
+		$category = isset($params['category']) ? $params['category'] : null;
+
+       	$this->Application->recursive = -1;
+
+        if ($category != null) {
+			$this->paginate['Application']['joins'] = array('Join app_categories as AppCategory on Application.id = AppCategory.application_id');
+			$this->paginate['Application']['conditions'] = array('AppCategory.category_id = '.$category);
+        }
+
+	    $this->Paginator->settings = $this->paginate;
+    	$result = $this->Paginator->paginate('Application');
+    	return $result;
 	}
 
 	public function addApplication(){

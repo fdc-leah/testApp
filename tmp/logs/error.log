@@ -914,3 +914,75 @@ Stack Trace:
 #12 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
 #13 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2018-09-24 09:50:05 Error: [NotFoundException] Not Found
+Request URL: /cake/myapp/applications/index/page:5/sort:Application.modified/direction:desc
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/app/Controller/ApplicationsController.php(33): PaginatorComponent->paginate('Application')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/app/Controller/ApplicationsController.php(16): ApplicationsController->paginateApp(Array)
+#2 [internal function]: ApplicationsController->index()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-09-24 09:50:11 Error: [NotFoundException] Not Found
+Request URL: /cake/myapp/applications/index/page:5/sort:Application.modified/direction:desc
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/app/Controller/ApplicationsController.php(33): PaginatorComponent->paginate('Application')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/app/Controller/ApplicationsController.php(16): ApplicationsController->paginateApp(Array)
+#2 [internal function]: ApplicationsController->index()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-09-25 08:54:45 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/XAMPP/xamppfiles/htdocs/cake/myapp/app/View/Applications/index.php, line 54]
+2018-09-25 08:54:45 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cake/myapp/applications
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-25 08:55:04 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/XAMPP/xamppfiles/htdocs/cake/myapp/app/View/Applications/index.php, line 54]
+2018-09-25 08:55:04 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cake/myapp/applications
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 54, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 54, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-25 08:55:13 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/XAMPP/xamppfiles/htdocs/cake/myapp/app/View/Applications/index.php, line 107]
+2018-09-25 08:55:13 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cake/myapp/applications
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 107)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 107, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 107, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-25 09:09:20 Error: Fatal Error (4): syntax error, unexpected 'foreach' (T_FOREACH) in [/Applications/XAMPP/xamppfiles/htdocs/cake/myapp/app/Controller/ApplicationsController.php, line 44]
+2018-09-25 09:09:20 Error: [FatalErrorException] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /cake/myapp/applications
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 44, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 44, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-25 09:30:28 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/XAMPP/xamppfiles/htdocs/cake/myapp/app/Controller/ApplicationsController.php, line 39]
+2018-09-25 09:30:28 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cake/myapp/applications
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 39, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 39, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/myapp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

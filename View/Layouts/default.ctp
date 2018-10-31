@@ -28,9 +28,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js');
-		echo $this->Html->script('https://code.jquery.com/jquery-3.2.1.slim.min.js');
+		echo $this->Html->script('https://code.jquery.com/jquery-3.3.1.min.js');
 
-		echo $this->Html->script('jquery-1-10-2.min');
+		// echo $this->Html->script('jquery-1-10-2.min');
 		echo $this->Html->script('jquery.infinitescroll.min');
 		
 		echo $this->Html->css('cake.generic');
@@ -65,6 +65,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</p>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<?php 
+		echo $this->element('sql_dump'); 
+		echo $this->Js->writeBuffer();
+	?>
 </body>
 </html>

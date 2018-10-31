@@ -1,0 +1,11 @@
+
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return DataManager.shared.isStatusBarDefault ? .default : .lightContent
+    }
+
+    UIApplication.shared.statusBarStyle = .default
+
+        
+        DataManager.shared.isStatusBarDefault = false
+        setNeedsStatusBarAppearanceUpdate()

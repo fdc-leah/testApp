@@ -1,5 +1,5 @@
 <?php 
-
+	echo $this->Html->script('jquery.infinitescroll.min');
 	$userloggedIn = $this->Session->read('User.id');
 	echo "Welcome ".$user['User']['full_name'].'!	';
 	echo $this->Html->link(
@@ -20,6 +20,7 @@
 		array('controller' => 'applications', 'action' => 'addApplication')
 	);
 ?>
+<?php  $page=$this->Paginator->counter(array('format' => ('%pages%'))) ;  ?>
 <div class="form" id="application-list">
 	<ul class="nav">
 		<li> 
@@ -32,7 +33,7 @@
 		</li>
 	</ul>
 	<h3> Applications </h3>
-	<table style="width:100%">
+	<table style="width:100%" id="table1">
 		<tr>
 		    <th>Name</th>
 			<th>Description</th> 
@@ -51,29 +52,53 @@
 				echo "<td>".$this->Html->link('View', array('controller' => 'applications', 'action' => 'viewApplication',$application['Application']['id']));
 				echo "</td></tr>";
 			}
-		?>
+		?> 
 	</table>
 
-<?php
-		echo $this->Paginator->next('Show more star wars posts...');
-?>
+<?php //echo $this->Paginator->prev('<< Previous');?> <br/>
+<?php //echo $this->Paginator->next('Next >>'); 
+	  echo $this->Paginator->numbers();
+?> 
 </div>
 
 <script>
-  $(function(){
-	var $container = $('#application-list');
+ //  $(function(){
+	// var $container = $('#application-list');
 
-	$container.infinitescroll({
-	  navSelector  : '.next',    // selector for the paged navigation 
-	  nextSelector : '.next a',  // selector for the NEXT link (to page 2)
-	  debug		 	: true,
-	  dataType	 	: 'html',
-	  loading: {
-		  finishedMsg: 'No more posts to load. All Hail Star Wars God!',
-		  img: '<?php echo $this->webroot; ?>img/spinner.gif'
-		}
-	  }
-	);
-  });
+	// $container.infinitescroll({
+	// 	navSelector  : '.next',
+	// 	nextSelector : '.next a',
+	// 	debug : true,
+	// 	dataType : 'html',
+	// 	loading: {
+	// 		finishedMsg: 'No more posts to load.',
+	// 		img: '<?php //echo $this->webroot; ?>img/spinner.gif'
+	// 	}
+	//   }
+	// );
+ //  });
+
+ var height = 0;
+$(function(){
+    height = $(this).innerHeight();
+
+
+});
+
+$('body').on('scroll', function() {
+	console.log('tesst');
+    let body_height = $(this).innerHeight();
+
+    if(body_height == height) {
+        $.ajax({
+            method: "GET",
+            url: "/applications/applications",
+            success: (e) => {
+            	let data = JSON.parse(e);
+                $("#table1").append(data);
+            }
+        });
+    }
+});
 
 </script>

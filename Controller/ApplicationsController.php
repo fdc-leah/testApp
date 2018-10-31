@@ -1,11 +1,11 @@
 <?php
 App::uses('AppController', 'Controller');
 class ApplicationsController extends AppController {
-	public $helpers = array('Html', 'Form', 'Flash');
+	public $helpers = array('Html', 'Form', 'Flash','Js' => array('Jquery'));
 	public $uses = array('User','AppCategory','Comment','Application','AppFile', 'Category');
 	public $paginate = array(
 		'Application' => array(
-			'limit' => 2,
+			'limit' => 5,
 			'order' => array('modified' => 'desc')
 		)
 	);
@@ -16,7 +16,15 @@ class ApplicationsController extends AppController {
 			$applications = $this->paginateApp($this->params['url']);
 			$categories = $this->Category->find('all');
 			$this->set(compact('applications','user','categories'));
+		} else {
+			$this->redirect(array('controller' => 'users','action' => 'login'));
 		}
+	}
+
+	public function applications(){
+		$data = $this->paginateApp($this->params['url']);
+		pr(json_encode($data));
+		return json_encode($data);
 	}
 
 	public function paginateApp($params){

@@ -2,7 +2,7 @@
 App::uses('AppController', 'Controller');
 App::uses('CakeNumber', 'Utility');
 class AppFilesController extends AppController {
-	public $helpers = array('Html', 'Form', 'Flash','Number');
+	public $helpers = array('Html', 'Form', 'Flash','Number','Js');
 	public $components = array('Flash');
 	public $uses = array('Application','AppFile');
 

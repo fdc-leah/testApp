@@ -38,6 +38,7 @@ class AppController extends Controller {
         'Flash',
         'Session',
         'Paginator',
+        'RequestHandler',
         'Auth' => array(
             'loginRedirect' => array(
             'controller' => 'applications',

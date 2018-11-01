@@ -26,16 +26,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php echo $this->fetch('title'); ?>
 	</title>
 	<?php
+		// echo $this->Html->css('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+		// echo $this->Html->script('https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/3.0.5/infinite-scroll.pkgd.js');
+		// echo $this->Html->script('jquery.infinitescroll.min');
+		// echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js');
+	
 		echo $this->Html->meta('icon');
-		echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js');
 		echo $this->Html->script('https://code.jquery.com/jquery-3.3.1.min.js');
-
-		// echo $this->Html->script('jquery-1-10-2.min');
-		echo $this->Html->script('jquery.infinitescroll.min');
+		echo $this->Html->script('jquery-ias.min.js');
 		
 		echo $this->Html->css('cake.generic');
 		echo $this->Html->css('general');
-		// echo $this->Html->css('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');

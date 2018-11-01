@@ -2,7 +2,7 @@
 App::uses('AppController', 'Controller');
 class ApplicationsController extends AppController {
 	public $helpers = array('Html', 'Form', 'Flash','Js' => array('Jquery'));
-	public $uses = array('User','AppCategory','Comment','Application','AppFile', 'Category');
+	public $uses = array('User','AppCategory','Comment','Application','AppFile', 'Category','ProfileImage');
 	public $paginate = array(
 		'Application' => array(
 			'limit' => 5,

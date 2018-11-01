@@ -45,7 +45,7 @@
 				$name = $application['Application']['title'];
 				$desc = $application['Application']['description'];
 				$version = $application['Application']['version'];
-				echo "<tr>
+				echo "<tr class='row'>
 						<td>$name</td>
 						<td>$desc</td> 
 						<td>$version</td>";
@@ -55,50 +55,32 @@
 		?> 
 	</table>
 
-<?php //echo $this->Paginator->prev('<< Previous');?> <br/>
-<?php //echo $this->Paginator->next('Next >>'); 
-	  echo $this->Paginator->numbers();
+<?php echo $this->Paginator->prev('Previous');?> |
+<?php echo $this->Paginator->next('Next'); 
+	  // echo $this->Paginator->numbers();
 ?> 
 </div>
 
 <script>
- //  $(function(){
-	// var $container = $('#application-list');
+// $('#content').on("scroll", function() {
+// 	var ias = jQuery.ias({
+// 	    container:  '#table1',
+// 	    item:       '.row',
+// 	    pagination: '#pagination',
+// 	    next:       '.next'
+// 	  });
+// });
 
-	// $container.infinitescroll({
-	// 	navSelector  : '.next',
-	// 	nextSelector : '.next a',
-	// 	debug : true,
-	// 	dataType : 'html',
-	// 	loading: {
-	// 		finishedMsg: 'No more posts to load.',
-	// 		img: '<?php //echo $this->webroot; ?>img/spinner.gif'
-	// 	}
-	//   }
-	// );
- //  });
-
- var height = 0;
-$(function(){
-    height = $(this).innerHeight();
-
-
-});
-
-$('body').on('scroll', function() {
-	console.log('tesst');
-    let body_height = $(this).innerHeight();
-
-    if(body_height == height) {
-        $.ajax({
-            method: "GET",
-            url: "/applications/applications",
-            success: (e) => {
-            	let data = JSON.parse(e);
-                $("#table1").append(data);
-            }
-        });
-    }
-});
+// $('#content').on('scroll', function() {
+// 	console.log('tesst');
+//     $.ajax({
+//         method: "GET",
+//         url: "/cake/myapp/applications/applications",
+//         success: (e) => {
+//         	let data = JSON.parse(e);
+//             $("#table1").append(data);
+//         }
+//     });
+// });
 
 </script>

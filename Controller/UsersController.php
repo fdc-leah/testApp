@@ -3,6 +3,7 @@ App::uses('AppController', 'Controller');
 class UsersController extends AppController {
 	public $helpers = array('Html', 'Form', 'Flash','Js');
 	public $components = array('Flash');
+	public $uses = array('User','ProfileImage');
 
 	public function beforeFilter() {
 		parent::beforeFilter();
@@ -52,7 +53,14 @@ class UsersController extends AppController {
 	public function updateProfile() {
 		if($this->Session->check('User.id')){
 			$userId = $this->Session->read('User.id');
-			$this->set('userId',$userId);
+			$profileImg = $this->ProfileImage->getCurrentFile($userId);
+			if($profileImg == "") {
+				$profileImg = 'img/profile-icon-9.png';
+			} else {
+				$profileImg = 'profileImgs/'.$profileImg;
+			}
+			$imagePath = $this->webroot.$profileImg;
+			$this->set(compact('userId','imagePath'));
 			if (!$userId) {
 				$this->Session->setFlash('Please provide a user id');
 				$this->redirect(array('controller' => 'applications','action' => 'index'));
